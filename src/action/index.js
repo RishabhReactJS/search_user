@@ -1,9 +1,9 @@
-export const RECEIVE_POSTS = 'RECEIVE_POSTS';
-function receivePosts(json) {
+export const RECEIVE_USER_DATA = 'RECEIVE_USER_DATA';
+function receiveUserData(json) {
   console.log('json');
   console.log(json);
   return {
-    type: RECEIVE_POSTS,
+    type: RECEIVE_USER_DATA,
     users: json
   };
 }
@@ -41,7 +41,7 @@ export function searchFor(searchText) {
     return fetch(`https://api.github.com/search/users?q=${searchText}`)
       .then(response => response.json())
       // .then(response => dispatch(selectUser(response.items)))
-      .then(response => dispatch(receivePosts(response.items)));
+      .then(response => dispatch(receiveUserData(response.items)));
   };
 }
 
