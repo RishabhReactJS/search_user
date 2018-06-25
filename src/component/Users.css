@@ -1,0 +1,53 @@
+.AboutDiv {
+  background: gray;
+}
+
+.userDataDiv {
+    display: flex;
+    margin: 2rem;
+    border: 1px solid;
+    border-radius: 4px;
+    background: white;
+}
+
+.usrImg {
+    border-radius: 3rem;
+    height: 5rem;
+    margin: 1rem;
+}
+
+.userDetails{
+
+}
+
+.collapseBtn{
+
+}
+
+#page-numbers {
+  list-style: none;
+  display: flex;
+  left: 10rem;
+}
+
+#page-numbers > li {
+  margin-right: 0.3em;
+  user-select: none;
+  cursor: pointer;
+}
+
+
+ul {
+  list-style-type: none;
+}
+
+.userRepos ul li h3 {
+  color: #5374d2;
+}
+
+.userRepos ul li:first-child {
+  border-top: gray solid 1px;
+}
+.userRepos ul li {
+  border-bottom: gray solid 1px;
+}
