@@ -17,7 +17,8 @@ class Users extends Component {
       order: 'asc',
       collapseVisible: false,
       currentPage: 1,
-      userPerPage: 5
+      userPerPage: 5,
+      currentUser: []
     };
   }
 
@@ -39,10 +40,36 @@ class Users extends Component {
     return null;
   }
 
-  handleClickNext(event) {
+  // componentDidMount() {
+  //   const { currentPage, userPerPage } = this.state;
+
+  //   // Logic for displaying current user
+  //   const indexOfLastUser = currentPage * userPerPage;
+  //   const indexOfFirstUser = indexOfLastUser - userPerPage;
+
+  //   let sortedData = this.state.userDa;
+  //   const iteratees = this.state.iteratees;
+  //   const order = this.state.order;
+  //   sortedData = _.sortBy(sortedData, [iteratees], [order]);
+
+  //   const currentUser = sortedData.slice(indexOfFirstUser, indexOfLastUser);
+
+  //   this.setState({
+  //     currentUser
+  //   })
+  // }
+
+  handleClickNext(event, currentUser) {
+    console.log(currentUser);
+    currentUser.map(user => (
+      this.props.selectUser(user.login)
+    ))
+    
+
     this.setState({
       currentPage: Number(event.target.id)
     });
+
   }
 
   sortDataP(targetV) {
@@ -96,16 +123,16 @@ class Users extends Component {
     }
 
     const renderPageNumbers = pageNumbers.map(number => {
-          return (
-            <li
-              key={number}
-              id={number}
-              onClick={(event) => this.handleClickNext(event)}
-            >
-              {number}
-            </li>
-          );
-        });
+      return (
+        <li
+          key={number}
+          id={number}
+          onClick={(event) => this.handleClickNext(event, currentUser)}
+        >
+          {number}
+        </li>
+      );
+    });
 
     return (
       <div className="AboutDiv">

@@ -36,9 +36,9 @@ export function requestRepo(userName) {
   };
 }
 
-export function searchFor(searchText) {
+export function searchFor(searchText, sort, order) {
   return dispatch => {
-    return fetch(`https://api.github.com/search/users?q=${searchText}`)
+    return fetch(`https://api.github.com/search/users?q=${searchText}&sort=${sort}&order=${order}`)
       .then(response => response.json())
       // .then(response => dispatch(selectUser(response.items)))
       .then(response => dispatch(receiveUserData(response.items)));
