@@ -1,5 +1,5 @@
 .AboutDiv {
-  background: gray;
+  /* background: gray; */
 }
 
 .userDataDiv {
@@ -7,7 +7,7 @@
     margin: 2rem;
     border: 1px solid;
     border-radius: 4px;
-    background: white;
+    background: #1496d740;
 }
 
 .usrImg {
@@ -27,7 +27,7 @@
 #page-numbers {
   list-style: none;
   display: flex;
-  left: 10rem;
+  margin-left: 2rem;
 }
 
 #page-numbers > li {
@@ -39,6 +39,11 @@
 
 ul {
   list-style-type: none;
+}
+
+.userList{
+  height: 700px;
+  overflow: scroll;
 }
 
 .userRepos ul li h3 {

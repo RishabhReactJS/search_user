@@ -12,15 +12,13 @@ export default (state = initialState, action) => {
     case RECEIVE_USER_DATA:
       return {
         ...state,
-        items:  action.users
+        items:  action.payload
       };
-
     case RECEIVE_USER:
       return {
         ...state,
         user: action.user
       };
-
     case RECEIVE_REPO:
       return {
         ...state,

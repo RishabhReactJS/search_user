@@ -4,7 +4,7 @@ function receiveUserData(json) {
   console.log(json);
   return {
     type: RECEIVE_USER_DATA,
-    users: json
+    payload: json
   };
 }
 

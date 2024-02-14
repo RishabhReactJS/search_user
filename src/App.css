@@ -1,63 +1,14 @@
-.App {
-  text-align: center;
-  margin: 5rem;
-  border: 2px solid ;
+@import url("https://fonts.googleapis.com/css?family=Oswald:400,700");
+* {
+  font-family: "Oswald";
+  transition: 100ms all ease-in-out;
+  box-sizing: border-box;
 }
 
-
-
-/* body {
-  position: relative;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  font-size: 16px;  
-}
-body:before {
+.app {
   position: absolute;
   top: 0;
-  content: "";
+  left: 0;
   width: 100%;
-  height: 100%;
-  opacity: .5;
-  background: url(http://m.rgbimg.com/cache1wmVD5/users/x/xy/xymonau/600/oy5PsrQ.jpg);
+  min-height: 100vh;
 }
-h1 {
-  margin-bottom: 50px;
-}
-.col-sm-8 {
-  background: #fff;
-  border: 1px solid #8b7ecd;
-  border-radius: 3px;
-}
-small {
-  color: #5bc0de;
-}
-span.active {
-  color: #9C27B0;
-}
-small.active {
-  color: #9C27B0;
-  font-weight: 700;
-}
-h4 {
-  font-size: 20px;
-}
-.btn .caret {
-  margin-left: 5px;
-}
-.author {
-  padding: 50px 0 0;
-  color: #9C27B0;
-}
-.media-left img {
-  border: 1px solid #9C27B0;
-  border-radius: 3px;
-}
-.dropdown-menu a {
-  position: relative;
-}
-.glyphicon-ok {
-  position: absolute;
-  top: 4px;
-  right: 15px;
-} */

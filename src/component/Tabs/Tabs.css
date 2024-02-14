@@ -1,0 +1,27 @@
+.tabs{
+    height: 4rem;
+    margin-bottom: 1rem;
+    background: #1496d740;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.sortSelect{
+    height: 25px;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+.searchBox{
+    height: 25px;
+    border-radius: 5px;
+}
+
+.selectedPage{
+    height: 25px;
+    border-radius: 5px;
+    text-align: center;
+    width: 40px;
+    margin-left: 5px;
+}
